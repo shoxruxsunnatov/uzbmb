@@ -27,7 +27,7 @@ class DownloadFileView(View):
 
 class DownloadFile2View(View):
     def get(self, req):
-        file_path = 'media/1.pdf'
+        file_path = 'media/2.pdf'
         if os.path.exists(file_path):
             return FileResponse(
                 open(file_path, 'rb'),
